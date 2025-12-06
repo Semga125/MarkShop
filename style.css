@@ -1,0 +1,122 @@
+body {
+  display: flex;
+  margin: 0;
+}
+
+.wrap {
+  width: 200px;
+  background-color: aquamarine;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.main {
+  flex: 1;
+  margin-left: 200px;
+  background-color: var(--darkreader-background-ffffff, #181a1b);
+  height: 2500px;
+}
+
+.h11 {
+  padding-left: 50px;
+}
+.apple {
+  display: flex;
+  justify-content: space-around;
+}
+.iphone16 {
+  border: 4px solid gray;
+}
+.iphone15 {
+  border: 4px solid gray;
+}
+.iphone14 {
+  border: 4px solid gray;
+}
+
+.Samsung {
+  margin-top: 110px;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 90px;
+}
+.SamsungS25 {
+  border: 2px solid gray;
+}
+.SamsungS24 {
+  border: 2px solid gray;
+}
+.SamsungS23 {
+  border: 2px solid gray;
+}
+.Redmi {
+  display: flex;
+  justify-content: space-around;
+}
+.Note14 {
+  border: 2px solid gray;
+  margin-left: 35px;
+}
+.Note13 {
+  border: 2px solid gray;
+}
+.Note12 {
+  border: 2px solid gray;
+}
+.red {
+  color: red;
+  padding-left: 15px;
+}
+.MarkShop {
+  background-color: black;
+  color: green;
+  text-align: center;
+}
+.catalog {
+  text-align: center;
+  background-color: rgb(10, 59, 10);
+  color: rgb(255, 255, 255);
+  display: inline;
+  margin-left: 47px;
+  width: 100px;
+  height: 40px;
+}
+.wrapcatalog {
+  display: none;
+}
+.but1 {
+  background-color: black;
+  width: 200px;
+  color: #00ff4c;
+  height: 70px;
+  font-size: 25px;
+}
+.submit {
+  background-color: rgb(54, 51, 51);
+  color: green;
+}
+
+.li {
+  background-color: black;
+  color: aliceblue;
+}
+.href {
+  color: aliceblue;
+}
+@media (max-width: 768px) {
+  .apple,
+  .Samsung,
+  .Redmi {
+    flex-direction: column;
+    align-items: center;
+    .wrap {
+      width: 150px;
+    }
+
+    .main {
+      margin-left: 150px;
+    }
+  }
+}
